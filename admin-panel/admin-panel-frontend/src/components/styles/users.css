@@ -1,0 +1,207 @@
+/* User.css */
+
+.user-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-inline: auto;
+    filter: drop-shadow(0px 0px 5px  lightgrey);
+}
+
+.user-table th, .user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tr:nth-child(odd) {
+    background-color: #eaeaea;
+}
+
+.user-table td {
+    color: #555;
+}
+
+.config-button {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: none;
+    background-color: transparent;
+    padding: .5rem;
+    line-height: 10px;
+    font-size: 1.1rem;
+    color: var(--clr-error);
+    transition: .2s ease-in-out;
+    font-weight: 900;
+}
+
+.config-button:hover {
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s ease-in-out;
+}
+
+/* Modal backdrop */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Transparent dark background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    max-width: 80%;
+    /* Responsive modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: modalFadeIn 0.3s ease;
+    /* Modal fade-in animation */
+    position: relative;
+}
+
+/* Modal fade-in animation */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Modal header */
+.modal-content h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Modal text */
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Input fields */
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Modal buttons */
+.modal-content button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Primary button */
+.modal-content button:first-of-type {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:first-of-type:hover {
+    background-color: #0056b3;
+}
+
+/* Secondary button */
+.modal-content button:last-of-type {
+    background-color: #6c757d;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:last-of-type:hover {
+    background-color: #5a6268;
+}
+
+/* Close button style (optional) */
+.modal-content .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+}
+
+.modal-content .close-button:hover {
+    color: #333;
+}
+
+.close-button {}
+
+#del-btn {
+    color: tomato;
+}
+
+#edit-btn {
+    color: lightblue;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+.role-selection{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}

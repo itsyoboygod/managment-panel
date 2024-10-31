@@ -1,0 +1,37 @@
+.upload-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.file-input {
+    margin: 10px 0;
+    padding: 2rem;
+    border: dashed 3px hsl(0, 0%, 50%);
+    border-radius: .5rem;
+}
+
+.upload-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
